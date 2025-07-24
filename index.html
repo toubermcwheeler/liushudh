@@ -83,18 +83,18 @@
   }
 
   // 生成链接并检测是否有效
-  encryptedLinks.forEach(async link => {
-    const realUrl = link.url ? atob(link.url) : link.raw;
-    const alive = await isLinkAlive(realUrl);
+  // encryptedLinks.forEach(async link => {
+  //   const realUrl = link.url ? atob(link.url) : link.raw;
+  //   const alive = await isLinkAlive(realUrl);
 
-    if (alive) {
-      const a = document.createElement("a");
-      a.textContent = "🔗 " + link.name;
-      a.target = "_blank";
-      a.rel = "noopener noreferrer";
-      a.href = realUrl;
-      container.appendChild(a);
-    }
+  //   if (alive) {
+  //     const a = document.createElement("a");
+  //     a.textContent = "🔗 " + link.name;
+  //     a.target = "_blank";
+  //     a.rel = "noopener noreferrer";
+  //     a.href = realUrl;
+  //     container.appendChild(a);
+  //   }
     // 否则不插入，达到“失效自动隐藏”的效果
   });
 </script>
