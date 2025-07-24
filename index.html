@@ -1,4 +1,58 @@
-<script>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>六叔导航</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="warning">
+        📢温馨提示：部分地区使用<span class="highlight">移动网络</span>可能无法正常访问本站，
+        建议切换至<span class="highlight">联通或电信网络</span>以确保稳定访问体验。
+      </p>
+      <h1>六叔导航</h1>
+      <marquee behavior="scroll" direction="left">
+        📢 本站为常用资源导航页，请收藏以防失联。
+      </marquee>
+	  <marquee behavior="scroll" direction="left">
+        📢 如果导航按钮减少或者无效请待会再来看看。
+      </marquee>
+    </header>
+
+    
+ <div class="search-bar" style="display: flex; justify-content: center; margin: 20px auto;">
+  <form action="https://www.baidu.com/s" method="get" target="_blank"
+        style="display: flex; align-items: center; width: 100%; max-width: 600px;">
+    <input type="text" name="wd" placeholder="百度一下你想找的..." required
+           style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px 0 0 4px; font-size: 16px;">
+    <button type="submit"
+            style="padding: 10px 20px; background-color: #4285F4; color: white; border: none; border-radius: 0 4px 4px 0; font-size: 16px; cursor: pointer;">
+      🔍 搜索
+    </button>
+  </form>
+</div>
+
+  <!-- 百度搜索栏结束 -->
+    <main>
+      <div class="links" id="encrypted-links">
+        <!-- 加密跳转链接将通过 JS 动态插入 -->
+      </div>
+    </main>
+<section class="description">
+      <h2>📌 关于本站</h2>
+      <p>本页面旨在提供便捷的资源入口导航，所有内容均来自互联网公开链接。</p>
+      <p>本站不存储任何内容，也不参与任何资源生产，仅作为跳转索引参考使用。</p>
+    </section>
+    <footer>
+      <p class="disclaimer">免责声明：本站仅收集公开网络链接，所有资源版权归原网站所有。</p>
+    </footer>
+  </div>
+
+  <script>
   const encryptedLinks = [
     { name: "图文资料站", url: "aHR0cHM6Ly93d3cuc2l0ZTAwMS5jb20=" },
     { name: "历史数据参考", url: "aHR0cHM6Ly93d3cuc2l0ZTAwMi5jb20=" },
@@ -24,3 +78,8 @@
     container.appendChild(a);
   });
 </script>
+
+
+</body>
+</html>
+
