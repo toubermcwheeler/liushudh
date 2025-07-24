@@ -69,18 +69,18 @@
   const container = document.getElementById("encrypted-links");
 
   // 用于检测链接是否有效（仅 HEAD 请求）
-  async function isLinkAlive(url) {
-    try {
-      const response = await fetch(url, {
-        method: "HEAD",
-        mode: "no-cors", // 避免 CORS 错误，仍能判断是否连通
-        cache: "no-store"
-      });
-      return true; // 若 fetch 成功（即使状态不可读），默认视为存活
-    } catch (e) {
-      return false;
-    }
-  }
+  // async function isLinkAlive(url) {
+  //   try {
+  //     const response = await fetch(url, {
+  //       method: "HEAD",
+  //       mode: "no-cors", // 避免 CORS 错误，仍能判断是否连通
+  //       cache: "no-store"
+  //     });
+  //     return true; // 若 fetch 成功（即使状态不可读），默认视为存活
+  //   } catch (e) {
+  //     return false;
+  //   }
+  // }
 
   // 生成链接并检测是否有效
   // encryptedLinks.forEach(async link => {
